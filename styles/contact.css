@@ -1,0 +1,120 @@
+section.formcontato {
+	background: var(--fondo3);
+	height: 100%;
+	width: 100%;
+	min-height: 765px;
+}
+
+div.formcontato__contacto {
+	display: flex;
+	margin-right: 4rem;
+	margin-left: 4rem;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+	height: 100%;
+}
+
+div.formcontato__text {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 635px;
+}
+
+div.formcontato--interno {
+	display: flex;
+	flex-direction: column;
+	height: 20%;
+}
+
+h2.formcontato__title {
+	margin-top: 0;
+}
+div.formcontato__subtext {
+	padding-top: 0.25rem;
+}
+form.formcontato__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80%;
+}
+
+div.form-group {
+	background: #ffffff;
+	padding-right: 1rem;
+	padding-left: 0.5rem;
+	padding-top: 0.5rem;
+	border-radius: 0.5rem;
+	padding-bottom: 0.25rem;
+	font-weight: bold;
+	color: rgb(37, 37, 167);
+}
+
+input.formcontato__input,
+.formcontato__textarea {
+	height: 2rem;
+	align-self: stretch;
+	width: 100%;
+	border: 0px;
+}
+
+.formcontato__textarea {
+	align-self: stretch;
+	max-width: 100%;
+	min-height: 8rem;
+	border: 0px;
+	resize: none;
+}
+textarea.formcontato__textarea:focus {
+	outline: 0 none;
+	box-shadow: 0 1px 1px rgba(180, 72, 6, 0.075) inset, 0 0 8px rgba(48, 216, 68, 0.6);
+}
+input.formcontato__input:focus {
+	outline: 0 none;
+	box-shadow: 0 1px 1px rgba(180, 72, 6, 0.075) inset, 0 0 8px rgba(48, 216, 68, 0.6);
+}
+
+.formcontato__inputMal {
+	box-shadow: 0 1px 1px rgba(180, 72, 6, 0.075) inset, 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.formcontato__inputBien {
+	box-shadow: 0 1px 1px rgba(180, 72, 6, 0.075) inset, 0 0 8px rgba(7, 51, 209, 0.419);
+}
+
+button.formcontato__botao {
+	background-color: rgb(42, 122, 228);
+	color: white;
+	font-size: 20px;
+	border: solid rgb(42, 122, 228);
+	border-width: 2px;
+	width: 12rem;
+	height: 4rem;
+}
+
+@media (max-width: 1000px) {
+	.formcontato__img {
+		display: none;
+	}
+
+	div.formcontato__text {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	div.formcontato__contacto {
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+}
+
+@media (max-width: 425px) {
+	div.formcontato__contacto {
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+	}
+}

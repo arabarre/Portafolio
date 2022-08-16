@@ -1,0 +1,29 @@
+footer {
+	height: 4rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--fondo1i);
+}
+.imgfooter {
+	display: flex;
+}
+@media (max-width: 768px) {
+	footer {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+@media (max-width: 520px) {
+	footer {
+		flex-direction: column;
+		align-items: flex-start;
+		height: auto;
+		padding-top: 1rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		padding-bottom: 1rem;
+	}
+}

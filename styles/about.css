@@ -1,0 +1,30 @@
+section.about {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	/*background-color: rgb(234, 242, 253);*/
+	background: var(--fondo2);
+}
+
+div.about__container {
+	/*background-color: rgb(234, 242, 253);*/
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+.firma {
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	div.about__container {
+		margin-left: 2em;
+		margin-top: 1rem;
+		margin-right: 2rem;
+	}
+}
+
+@media (max-width: 425px) {
+	div.about__container {
+		margin-left: 0.5em;
+		margin-right: 0.5rem;
+	}
+}

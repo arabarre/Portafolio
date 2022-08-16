@@ -1,0 +1,32 @@
+body {
+	--angulo: 0deg;
+	--icono: 64px;
+}
+.iconoAnimado {
+	height: var(--icono);
+	transition: 200ms;
+}
+.hobbies__box:hover,
+.skills__box:hover {
+	--angulo: 5deg;
+	--icono: 74px;
+	background-color: #8080ff;
+	border-bottom: solid rgb(89, 89, 178);
+	border-right: solid rgb(89, 89, 178);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.iconoAnimado {
+		animation: balancear-spin infinite 1s linear;
+		animation-direction: alternate;
+	}
+}
+
+@keyframes balancear-spin {
+	from {
+		transform: rotate(calc(-1 * var(--angulo)));
+	}
+	to {
+		transform: rotate(var(--angulo));
+	}
+}

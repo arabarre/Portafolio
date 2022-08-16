@@ -1,0 +1,113 @@
+section.menu {
+	display: flex;
+	overflow: hidden;
+	background: var(--fondo1);
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+header.menu__header {
+	margin-left: 4rem;
+	display: flex;
+	max-width: 200px;
+	min-width: 190px;
+	align-items: center;
+	justify-content: space-between;
+}
+nav {
+	display: flex;
+	width: 100%;
+	margin-right: 4rem;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+ul.menu__list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+ul.menu__list :nth-child(6) {
+	font-weight: 1000;
+}
+
+ul.menu__list :nth-child(6):hover {
+	transition: 400ms;
+	text-decoration: underline;
+}
+
+li.menu__list__item1:hover {
+	transition: 400ms;
+	font-weight: 1000;
+}
+
+@media (max-width: 860px) {
+	li.menu__list__item1 {
+		display: none;
+	}
+	ul.menu__list {
+		margin-right: 0.5rem;
+		justify-content: space-between;
+	}
+
+	header.menu__header {
+		margin-left: 0.5rem;
+	}
+	nav {
+		width: 100%;
+		margin-left: 0rem;
+		/*margin-right: 0.5rem;*/
+		justify-content: flex-end;
+	}
+	ul.menu__list {
+		width: 100%;
+		margin-left: 0.25rem;
+		padding-left: 0;
+		justify-content: flex-end;
+	}
+}
+@media (max-width: 768px) {
+	header.menu__header {
+		margin-left: 2rem;
+	}
+	nav {
+		margin-right: 2rem;
+	}
+}
+
+@media (max-width: 425px) {
+	section.menu {
+		justify-content: flex-start;
+	}
+	header.menu__header {
+		margin-left: 0.5rem;
+	}
+	nav {
+		/*margin-right: 0.5rem;*/
+		width: calc(0%-190px);
+		margin: 0;
+	}
+}
+/* Animando logo*/
+.miLogo {
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.miLogo {
+		animation: miLogo-spin infinite 20s linear;
+	}
+}
+
+@keyframes miLogo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
